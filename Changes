@@ -1,0 +1,20 @@
+Revision history for Check::ISA
+
+0.05  2016-05-28 MANWAR
+      - Tidied up pod document.
+      - Tidied up Changes file.
+      - Rewrote Makefile.PL script.
+      - Added section "REPOSITORY".
+      - Added standard 00-load.t script.
+
+0.04  2008-07-25 NUFFIN
+      - Introduce obj_does for semantic compatibility on 5.8 without performance loss. Duh.
+
+0.03  2008-07-24 NUFFIN
+      - Improved with input from Adam Kennedy.
+
+0.02  2008-06-29 NUFFIN
+      - Test suite fixes for perls below 5.10.
+
+0.01  2008-06-28 NUFFIN
+      - Initial release.
