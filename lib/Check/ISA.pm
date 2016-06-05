@@ -15,7 +15,7 @@ use Sub::Exporter -setup => {
 use constant CAN_HAS_DOES => not not UNIVERSAL->can("DOES");
 use warnings::register;
 
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 sub extract_io {
     my $glob = shift;
@@ -138,13 +138,13 @@ Check::ISA - DWIM, correct checking of an object's class.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =head1 SYNOPSIS
 
     use Check::ISA;
 
-    if ( obj($foo, "SomeClass") ) {
+    if (obj($foo, "SomeClass")) {
 	$foo->some_method;
     }
 
@@ -213,16 +213,82 @@ L<UNIVERSAL>, L<Params::Util>, L<autobox>, L<Moose>, L<asa>
 
 L<https://github.com/manwar/Check-ISA>
 
+=head1 BUGS
+
+Please report any bugs or feature requests to C<bug-check-isa at rt.cpan.org>,  or
+through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Check-ISA>.
+I will  be notified and then you'll automatically be notified of progress on your
+bug as I make changes.
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Check::ISA
+
+You can also look for information at:
+
+=over 4
+
+=item * RT: CPAN's request tracker (report bugs here)
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Check-ISA>
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/Check-ISA>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/Check-ISA>
+
+=item * Search CPAN
+
+L<http://search.cpan.org/dist/Check-ISA/>
+
+=back
+
 =head1 AUTHOR
 
 Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
 
 Currently maintained by Mohammad S Anwar (MANWAR), C<< <mohammad.anwar at yahoo.com> >>
 
-=head1 COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2008 - 2016 Yuval Kogman. All rights reserved. This program is free
-software; you can redistribute it and / or modify it under the same terms as Perl
-itself.
+Copyright (c) 2008 Yuval Kogman.
+
+Copyright (c) 2016 Mohammad S Anwar.
+
+All rights reserved. This program is free software; you can redistribute it and /
+or modify it under the same terms as Perl itself.
+
+Any  use,  modification, and distribution of the Standard or Modified Versions is
+governed  by  this License. By  using, modifying or distributing the Package, you
+accept this license. Do not use, modify, or distribute the Package, if you do not
+accept this license.
+
+If your Modified Version has been derived from a Modified Version made by someone
+other than you,you are nevertheless required to ensure that your Modified Version
+ complies with the requirements of this license.
+
+This  license  does  not grant you the right to use any trademark,  service mark,
+tradename, or logo of the Copyright Holder.
+
+This license includes the non-exclusive, worldwide, free-of-charge patent license
+to make,  have made, use,  offer to sell, sell, import and otherwise transfer the
+Package with respect to any patent claims licensable by the Copyright Holder that
+are  necessarily  infringed  by  the  Package. If you institute patent litigation
+(including  a  cross-claim  or  counterclaim) against any party alleging that the
+Package constitutes direct or contributory patent infringement, then this License
+to you shall terminate on the date that such litigation is filed.
+
+Disclaimer  of  Warranty:  THE  PACKAGE  IS  PROVIDED BY THE COPYRIGHT HOLDER AND
+CONTRIBUTORS  "AS IS'  AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE IMPLIED
+WARRANTIES    OF   MERCHANTABILITY,   FITNESS   FOR   A   PARTICULAR  PURPOSE, OR
+NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY YOUR LOCAL LAW. UNLESS
+REQUIRED BY LAW, NO COPYRIGHT HOLDER OR CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL,  OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE
+OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut

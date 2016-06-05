@@ -1,5 +1,9 @@
 Revision history for Check::ISA
 
+0.06  2016-06-05 MANWAR
+      - Updated Copyright details as suggested by Yuval Kogman (original author).
+      - Added more information to the pod document.
+
 0.05  2016-05-28 MANWAR
       - Tidied up pod document.
       - Tidied up Changes file.
