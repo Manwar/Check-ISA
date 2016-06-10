@@ -15,7 +15,7 @@ use Sub::Exporter -setup => {
 use constant CAN_HAS_DOES => not not UNIVERSAL->can("DOES");
 use warnings::register;
 
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 sub extract_io {
     my $glob = shift;
@@ -138,7 +138,7 @@ Check::ISA - DWIM, correct checking of an object's class.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =head1 SYNOPSIS
 
