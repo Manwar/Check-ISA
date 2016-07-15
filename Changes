@@ -1,5 +1,8 @@
 Revision history for Check::ISA
 
+0.08  2016-07-15 MANWAR
+      - Added LICENSE file as reported by CPANTS.
+
 0.07  2016-06-10 MANWAR
       - Added README file as reported by CPANTS.
 
