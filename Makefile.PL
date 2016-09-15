@@ -26,6 +26,9 @@ WriteMakefile(
     clean => { FILES => 'Check-ISA-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
+        provides    => {
+            'Check::ISA' => { file => 'lib/Check/ISA.pm', version => '0.09' },
+        },
         resources => {
             repository => {
                 type => 'git',

@@ -1,5 +1,8 @@
 Revision history for Check::ISA
 
+0.09  2016-09-15 MANWAR
+      - Added 'provides' to Makefile.PL script.
+
 0.08  2016-07-15 MANWAR
       - Added LICENSE file as reported by CPANTS.
 
